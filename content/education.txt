@@ -1,0 +1,22 @@
+3
+NAME: Middlebury College
+DURATION: September 2021 - May 2024
+PROGRAM: Bachelor of Arts, Biochemistry / Computer Science focus
+LOCATION: Middlebury, VT
+DETAILS:
+GPA: 3.82, <b>Summa Cum Laude</b>, College Scholar all semesters (highest academic honor)
+Coursework: Software Development, Computer & Network Architecture, Systems Programming & Security
+Leadership: Climbing Club <b>President</b> and <b>Coach</b>, Water Polo <b>Captain</b>, Community Friends and Sports PT <b>Volunteer</b>
+Awards: Recipient of Middlebury’s Cross-Cultural Community Engagement Grant
+
+2
+NAME: AWS Machine Learning Engineer Nanodegree (Udacity)
+DURATION: October 2023
+DETAILS:
+AWS (Lambda, IAM, S3), Cloud Management, Hyperparameter Tuning, Step Functions, Neural Networks, PyTorch
+
+1
+NAME: Security+ (CompTIA)
+DURATION: Expected June 2025
+DETAILS:
+Network Security, Zero Trust, Social Engineering, Application & Cryptographic Attacks, Security Infrastructure
