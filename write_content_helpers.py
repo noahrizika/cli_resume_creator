@@ -12,7 +12,7 @@ from classes.education import Education
 
 
 def write_experiences(
-    filename,
+    filename: str,
     selected_experiences: List[int],
     title_style,
     body_style_l,
