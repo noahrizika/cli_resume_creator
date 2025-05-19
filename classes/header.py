@@ -1,32 +1,35 @@
+'''
+classes/header.py
+'''
+
 from typing import List, Optional
 from reportlab.platypus import Paragraph, ListItem, ListFlowable, Table, TableStyle
+
+from config import personal_data
+from styles import main_title_style, body_style_c, line_break, newline_chunk
 
 class Header:
 
     def __init__(
         self,
-        name: str,
-        phone_number: str,
-        github_url: str,
-        linkedin_url: str,
-        email: str,
     ) -> None:
-        self.name = name
-        self.A_phone_number = phone_number
-        self.B_github_url = github_url
-        self.C_linkedin_url = linkedin_url
-        self.D_email = email
+        self.name = personal_data['name']
+        self.phone_number = personal_data['phone_number']
+        self.github_url = personal_data['github_url']
+        self.linkedin_url = personal_data['linkedin_url']
+        self.email = personal_data['email']
 
-    def write_header(self, body_style, main_title_style):
+    def write_header(self):
         title_p = Paragraph(self.name, main_title_style)
-        text = """
-            +1 (310) 720-7415 •
-            <a href="https://noahrizika.github.io">noahrizika.github.io</a> •
-            <a href="https://linkedin.com/in/noah-rizika">linkedin.com/in/noah-rizika</a> •
-            <a href="mailto:noahrizika@gmail.com">noahrizika@gmail.com</a>
+        text = f"""
+            {self.phone_number} •
+            <a href="https://{self.github_url}">{self.github_url}</a> •
+            <a href="https://www.{self.linkedin_url}">{self.linkedin_url}</a> •
+            <a href="mailto:{self.email}">{self.email}</a>
             """
-        body = Paragraph(text, body_style)
-        return [title_p, body]
+        body = Paragraph(text, body_style_c)
 
-
-
+        section = [title_p, body]
+        section.extend(line_break)
+        section.extend(newline_chunk)
+        return section

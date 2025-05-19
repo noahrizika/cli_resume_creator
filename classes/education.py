@@ -1,24 +1,33 @@
-from typing import List, Optional
+"""
+classes/education.py
+"""
+
+from typing import Dict, List, Optional
 from reportlab.platypus import Paragraph, ListItem, ListFlowable, Table, TableStyle
 
-class Education:
-    def __init__(self, metadata: dict[str, str], details: list[str]):
-        self.name = metadata.get("NAME", "")
-        self.duration = metadata.get("DURATION", "")
-        self.program = metadata.get("PROGRAM", "")
-        self.location = metadata.get("LOCATION", "")
-        self.details = details
+from styles import body_style_l, body_style_r, sub_body_style_l, sub_body_style_r, sub_bullet_style, table_style
+from classes.generic_section import GenericSection
+
+class Education(GenericSection):
+    def __init__(self, content: Dict[str, str]):
+        self.name = content.get("name", "")
+        self.duration = content.get("duration", "")
+        self.program = content.get("program", "")
+        self.location = content.get("location", "")
+
+        # extract and reformat details
+        data = []
+        for k, v in content['details'].items():
+            head = k.title()
+            if k == 'GPA': # edge case: all letters in GPA should be capitalized
+                head = k
+            line = f"{head}: {v}"
+            data.append(line)
+
+        super().__init__(data)  # Call the parent constructor to initialize details
 
     def write_education(
         self,
-        body_style_l,
-        body_style_r,
-        sub_body_style_l,
-        sub_body_style_r,
-        sub_bullet_style,
-        table_style,
-        bold_words: Optional[list[str]] = None,
-        reg_words: Optional[list[str]] = None,
         table_widths: Optional[list[float]] = [350.0, 150.0],
     ):
         # make a table for 1st and 2nd lines to have L and R alignment
@@ -44,10 +53,6 @@ class Education:
             table_style
         )
        
-        # details
-        details = [
-            (ListItem(Paragraph(detail, sub_bullet_style))) for detail in self.details
-        ]
-        details_list = ListFlowable(details, bulletType='bullet')
+        details_list = self.write_bullets(b_style=sub_bullet_style)
 
         return edu_table, details_list

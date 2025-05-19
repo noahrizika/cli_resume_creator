@@ -100,7 +100,10 @@ styles.add(
     )
 )
 
-# define exports
+
+"""
+define exports
+"""
 
 # set table format
 table_style = TableStyle(
@@ -119,7 +122,7 @@ newline_sub_chunk = [Spacer(1, 0.05 * inch)]
 # create a line_break component
 line_break = [Spacer(1, 0.05 * inch), HRFlowable(width='100%', thickness=1, color=colors.black)]
 
-# assign styles
+# assign font styles
 main_title_style = styles['Main_Section1']
 title_style = styles['Section1']
 body_style_l = styles['Body1_Left']

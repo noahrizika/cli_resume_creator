@@ -1,0 +1,32 @@
+[
+    {
+        "id": 3,
+        "name": "Middlebury College",
+        "duration": "September 2021 - May 2024",
+        "program": "Bachelor of Arts, Biochemistry / Computer Science focus",
+        "location": "Middlebury, VT",
+        "details": {
+            "GPA": "3.82, <b>Summa Cum Laude</b>, College Scholar all semesters (highest academic honor)",
+            "coursework": "Software Development, Computer & Network Architecture, Systems Programming & Security",
+            "leadership": "Climbing Club <b>President</b> and <b>Coach</b>, Water Polo <b>Captain</b>, Community Friends and Sports PT <b>Volunteer</b>",
+            "awards": "Recipient of Middlebury’s Cross-Cultural Community Engagement Grant"
+        }
+    },
+    {
+        "id": 2,
+        "name": "AWS Machine Learning Engineer Nanodegree (Udacity)",
+        "duration": "October 2023",
+        "details": {
+            "hard skills": "AWS (Lambda, IAM, S3), Cloud Management, Hyperparameter Tuning, Step Functions, PyTorch"
+        }
+    },
+    {
+        "id": 1,
+        "name": "Security+ (CompTIA)",
+        "duration": "Expected June 2025",
+        "details": {
+            "hard skills": "Network Security, Zero Trust, Social Engineering, Application & Cryptographic Attacks, Security Infrastructure"
+        }
+    }
+]
+

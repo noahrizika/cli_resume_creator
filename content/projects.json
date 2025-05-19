@@ -1,0 +1,45 @@
+[
+    {
+        "id": 5,
+        "project_name": "Semi-Autonomous Drone Swarm",
+        "details": [
+            "<b>Stabilization algorithms</b> leverage <b>sensor fusion</b> and <b>PID controller</b> data to enhance flight in ESP32-based drones",
+            "Drone coordinates relayed via MQTT and ESP-NOW using <b>multithreading</b>, <b>FreeRTOS</b>, and <b>OOP</b> in <b>C++</b>"
+        ]
+    },
+    {
+        "id": 4,
+        "project_name": "Multiprocessing & Performance for Systems Engineering",
+        "details": [
+            "Wrote a fully-functional, <b>multiprocessing Linux</b> shell in <b>C</b> including piping and I/O redirection",
+            "Optimized low-level system calls for <b>improved performance</b> and <b>memory management</b>"
+        ]
+    },
+    {
+        "id": 3,
+        "project_name": "Sonar Room-Mapping Robot",
+        "details": [
+            "Sonar radar system communicates robot’s positional coordinates, AI-generated movement instructions, and sonar data with a host via Bluetooth using <b>C++</b> and <b>Python</b>",
+            "Renders a 2D map from the sonar data using <b>Matplotlib</b>, SciPy, and an AI clustering algorithm"
+        ]
+    },
+    {
+        "id": 2,
+        "project_name": "Outdoor Rock Climbing Website",
+        "details": [
+            "Guided rock climbers to new climbing areas by building a full stack <b>React.js</b> web app with Google Maps and RESTful weather APIs",
+            "Managed and displayed college climbing events in real time by connecting <b>PostgreSQL</b> to a <b>Node.js</b> backend",
+            "Created a novel rock climbing grading system by analyzing mixed climbing data using Python’s Pandas library",
+            "Easily apply the grading system to a user-specified rock climb using a friendly UI"
+        ]
+    },
+    {
+        "id": 1,
+        "project_name": "Chatbot for Academic Research Connections",
+        "details": [
+            "Built a <b>prompt-engineered</b> AI assistant for learning about experts who study a user-specified academic field",
+            "Developed a full stack <b>Next.js</b> web app using <b>Typescript</b>, <b>Tailwind</b>, <b>Supabase</b> and OpenAI’s API"
+        ]
+    }
+]
+

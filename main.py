@@ -1,25 +1,28 @@
 #!/usr/bin/env python3
 
-import os
+"""
+main.py
+"""
 
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate
 
-from handle_args import get_args, assign_preset
+from config import update_configs 
+from handle_args import get_args
 from build_resume import build_resume
 
 def main():
     args = get_args()
-
-    args_dict= dict()
-    if args.preset:
-        args_dict = assign_preset(args.preset)
-        args_dict['project_url'] = 'https://github.com/noahrizika'
-        args_dict['name'] = "Noah Rizika"
-        args_dict['filename'] = '/Users/noahrizika/Desktop/NoahRizikaResume.pdf'
-    else:
-        args_dict = vars(args)
+    update_configs(
+        new_name=args['change_name'],
+        new_phone_number=args['change_phone_number'],
+        new_github_url=args['change_github_url'],
+        new_linkedin_url=args['change_linkedin_url'],
+        new_email=args['change_email'],
+        new_project_url=args['change_project_url'],
+        new_filepath=args['change_filepath']
+    )
 
     # initialize pdf
     pagesize = letter  # 8.5 x 11 inches (standard US paper)
@@ -27,7 +30,7 @@ def main():
     margin_top = 0.6
     margin_bottom = 0.6
     doc = SimpleDocTemplate(
-        filename=args_dict['filename'],
+        filename=args['resume_filepath'],
         pagesize=pagesize,
         leftMargin=margin_width * inch,
         rightMargin=margin_width * inch,
@@ -36,15 +39,15 @@ def main():
     )
 
     resume = build_resume(
-        name=args_dict['name'],
-        skill_type=args_dict['skill_type'],
-        have_fullstack=args_dict['have_fullstack'],
-        have_syseng=args_dict['have_syseng'],
-        have_ml=args_dict['have_ml'],
-        selected_experiences=list(map(int, args_dict["selected_experiences"].split())),
-        selected_projects=list(map(int, args_dict["selected_projects"].split())),
-        selected_educations=list(map(int, args_dict["selected_educations"].split())),
-        project_url=args_dict['project_url'],
+        skill_type=args['skill_type'],
+        have_fullstack=args['have_fullstack'],
+        have_syseng=args['have_syseng'],
+        have_ml=args['have_ml'],
+        have_clearance=args["have_clearance"],
+        included_sections=args['sections'],
+        selected_experiences=args["selected_experiences"],
+        selected_projects=args["selected_projects"],
+        selected_educations=args["selected_educations"],
     )
 
     # maybe build in an order functionality later?

@@ -1,0 +1,9 @@
+{
+    "embedded_hs": "<b>Hard Skills</b>: C/C++, Golang, Python, FreeRTOS, Distributed Systems, IP/TCP, Linux, Bash, Wireshark, GDB",
+    "fullstack_hs": "<b>Hard Skills</b>: Javascript, React/Next.js, TypeScript, Tailwind, CSS, Jest, Docker, Python, PostgreSQL, C, AWS",
+    "softeng_hs": "<b>Hard Skills</b>: C/C++, TypeScript, Python, Java, React/Next.js, PostgreSQL, AWS, Linux, Git, Pandas, PyTorch",
+    "git": "<b>CI/CD & Git</b>: Experienced in agile workflows, automated testing, and integrating production-ready code",
+    "fullstack_exp": "<b>Full-Stack Developer</b>: Led data pipeline design and development to expand database and improve UX",
+    "syseng_exp": "<b>Machine-Level Engineer</b>: Built networked embedded systems with multithreading and sensor fusion",
+    "ml_exp": "<b>Computer Vision Engineer</b>: Created image classification ML model for Dartmouth biology research"
+}
