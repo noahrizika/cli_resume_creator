@@ -11,7 +11,7 @@
 - Edited resume content will be reflected across all future resumes
     - As a result of the first bullet point, I had many different resumes. To revise my resume style or content, I'd need to do it manually for all resumes
 - Using the CLI
-    - Don't need to launch a heavyweight application just to save a preconfigured resume as a pdf
+    - Shorter pipleine to obtain resume pdf (eg: cli -> cmd, instead of web browser -> google docs -> folder navigation -> resume -> download as pdf)
 - Locally hosted development
     - No need for internet connection. Privacy
 - But...if I were to do it again, I'd just use LaTex instead of the reportlab library
