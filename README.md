@@ -33,4 +33,4 @@ echo "#!/bin/bash\n\npython3 [absoulte_path_to_resume_creator_directory]/main.py
 
 ```
 
-Please add to this project as you see fit!
+### Please add to this project as you see fit!
