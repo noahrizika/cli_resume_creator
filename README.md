@@ -10,10 +10,10 @@
     - I was annoyed manually tailoring resumes to a fullstack vs backend vs etc job application 
 - Edited resume content will be reflected across all future resumes
     - As a result of the first bullet point, I had many different resumes. To revise my resume style or content, I'd need to do it manually for all resumes
+- Using the CLI
+    - Don't need to launch a heavyweight application just to save a preconfigured resume as a pdf
 - Locally hosted development
     - No need for internet connection. Privacy
-- Using the CLI
-    - No need to launch an application, just to save a preconfigured resume as a pdf
 - But...if I were to do it again, I'd just use LaTex instead of the reportlab library
     - I wasn't too familiar with LaTex before writing this program
 
