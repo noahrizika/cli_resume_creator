@@ -1,5 +1,6 @@
 # cli resume creator
 ...just turn all your resume content into JSON first -> see resume_creator/content/ for what to overwrite with your information
+also, change the 'resume_filepath' in resume_creator/content/configs.json to whatever filepath you want
 use '[name_of_command] -h' for help
 
 ### steps
