@@ -1,6 +1,6 @@
 # CLI Resume Creator
-...just turn all your resume content into JSON first -> see resume_creator/content/ for what to overwrite with your information  
-(an LLM can format it for you really quickly as long as you give it the JSON structure beforehand)  
+...just turn all your resume content into JSON -> see resume_creator/content/ for what to overwrite with your information  
+(an LLM can format your content into JSON really quickly as long as you give it the JSON structure beforehand)  
 
 - Play around with resume_creator/styles.css as interested  
 - Use '[name_of_command] -h' for help  
